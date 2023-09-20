@@ -1,6 +1,13 @@
 body {
   margin: 0;
 }
+.pictures {
+    text-align: center;
+    width: 600px;
+    height: 362.6px;
+    max-width: 80%;
+    height: auto;
+    }
 
 .container {
   display: block;
