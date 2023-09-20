@@ -25,3 +25,7 @@ html {
     line-height: 1.5;
     color: #333;
 }
+p {
+width: 500px;
+text-align: center;
+}
