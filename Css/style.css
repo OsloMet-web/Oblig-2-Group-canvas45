@@ -24,4 +24,8 @@ aside {
   padding: 20px;
   float: right;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+p {
+width: 500px;
+text-align: center;
 }
