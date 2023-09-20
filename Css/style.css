@@ -1,8 +1,7 @@
-html {
-    margin: 0;
+body {
+  margin: 0;
 }
-.pictures {
-    
+.pictures {   
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -18,20 +17,33 @@ html {
     padding-right: 20px;
 }
 .container {
-    width: 90%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border: 1px solid #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  float: left;
+  margin: 0;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .container p {
-    font-size: 18px;
-    line-height: 1.5;
-    color: #333;
+  font-size: 18px;
+  line-height: 1.5;
 }
+
+aside {
+  display: block;
+  width: 15%;
+  max-width: 1000px;
+  margin: 0;
+  padding: 20px;
+  float: right;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 p {
 width: 500px;
 text-align: center;
+}
+h3 {
+    width: 500px;
+    text-align: center;
 }
