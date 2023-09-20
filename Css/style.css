@@ -11,3 +11,17 @@ html {
     padding-left: 120px;
     padding-right: 20px;
 }
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
