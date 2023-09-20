@@ -1,7 +1,14 @@
 html {
     margin: 0;
 }
+.pictures {
+    text-align: center;
+    width: 600px;
+    height: 362.6px;
+    max-width: 80%;
+    height: auto;
 
+}
 .underText {
     position: absolute;
     bottom: 20px;
