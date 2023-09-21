@@ -2,15 +2,16 @@ body {
   margin: 0;
 }
 .pictures {
-    text-align: center;
-    width: 600px;
-    height: 362.6px;
-    max-width: 80%;
-    height: auto;
-    }
+  text-align: center;
+  width: 37.5em;
+  height: 22.6em;
+  max-width: 60%;
+  height: auto;
+}
 
 .container {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 1000px;
   float: left;
@@ -18,25 +19,26 @@ body {
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .container p {
-  font-size: 18px;
-  line-height: 1.5;
 }
 
 aside {
-  display: block;
-  width: 15%;
+  display: flex;
+  width: 14%;
   max-width: 1000px;
   margin: 0;
   padding: 20px;
   float: right;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 p {
-width: 500px;
-text-align: center;
+  width: 500px;
+  text-align: center;
+  line-height: 1.5;
 }
 h3 {
-    width: 500px;
-    text-align: center;
+  width: 500px;
+  text-align: center;
 }
