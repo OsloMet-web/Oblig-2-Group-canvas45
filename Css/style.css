@@ -1,23 +1,13 @@
 body {
   margin: 0;
 }
-.pictures {
+.pictures img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 100%;
+  height: auto;
 }
-.underText {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: black;
-  color: white;
-  padding-left: 120px;
-  padding-right: 20px;
-}
-
-
 .container {
   display: grid;
   grid-template-rows: repeat(4, 200px);
@@ -66,13 +56,25 @@ body {
     display: block;
     text-align: center;
   }
+  .navigationBar :hover {
+    background-color: aqua;
+  }
   #subscribe {
     float: right;
     display: block;
-    color: #f2f2f2;
+    color: #dddddd;
     text-align: center;
     padding: 30px 40px;
     font-size: 1.5rem;
+  }
+  #store {
+    float: right;
+    display: block;
+    color: #42a4ff;
+    text-align: center;
+    padding: 30px 40px;
+    font-size: 1.5rem;
+    background-color: rgb(255, 255, 255);
   }
   #contactUs {
     float: right;
@@ -83,22 +85,20 @@ body {
     text-decoration: none;
     font-size: 1.5rem;
   }
-  #store {
-    float: right;
-    display: block;
-    color: #42a4ff;
-    text-align: center;
-    padding: 30px 40px;
-    font-size: 1.5rem;
-    background-color: rgb(233, 229, 229);
-    
-  }
   #about {
     float: right;
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 30px 40px;
+    font-size: 1.5rem;
+  }
+  #data {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 16px 40px;
     font-size: 1.5rem;
   }
 #page-end {
