@@ -74,15 +74,6 @@ body {
     padding: 30px 40px;
     font-size: 1.5rem;
   }
-  #store {
-    float: right;
-    display: block;
-    color: #42a4ff;
-    text-align: center;
-    padding: 30px 40px;
-    font-size: 1.5rem;
-    background-color: rgb(233, 229, 229);
-  }
   #contactUs {
     float: right;
     display: block;
@@ -91,6 +82,16 @@ body {
     padding: 30px 40px;
     text-decoration: none;
     font-size: 1.5rem;
+  }
+  #store {
+    float: right;
+    display: block;
+    color: #42a4ff;
+    text-align: center;
+    padding: 30px 40px;
+    font-size: 1.5rem;
+    background-color: rgb(233, 229, 229);
+    
   }
   #about {
     float: right;
