@@ -16,10 +16,7 @@ body {
   padding-left: 120px;
   padding-right: 20px;
 }
-.nav-container {
-  display: flex;
-  margin: 0;
-}
+
 
 .container {
   display: grid;
@@ -28,20 +25,23 @@ body {
   padding: 20px;
 }
 
+.nav-container {
+  grid-area: 1 / 1 / 2 / 5
+}
 .main-header {
-  grid-area: 1 / 1 / 2 / 4;
+  grid-area: 2 / 1 / 2 / 4;
 }
 
 .main-content {
-  grid-area: 2 / auto / 4 / 4;
+  grid-area: 3 / 1 / 4 / auto;
 }
 
 .aside {
-  grid-area: 1 / 4 /  / 5;
+  grid-area: 2 / 4 / 4 / auto;
 }
 
 .footer {
-  grid-area: 1 / 5 / 5 / 5;
+  grid-area: auto / auto / 5 / 5;
 }
   p {
     width: 500px;
