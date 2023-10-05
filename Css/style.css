@@ -18,31 +18,31 @@ body {
 }
 .nav-container {
   display: flex;
-  width: 100%;
   margin: 0;
-  padding: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .container {
   display: grid;
   grid-template-rows: repeat(4, 200px);
   grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
 }
 
 .main-header {
-  grid-area: 1 / 2 / 1 / 4;
+  grid-area: 1 / 1 / 2 / 4;
 }
 
 .main-content {
-  grid-area: 2 / auto / 2 / 4;
+  grid-area: 2 / auto / 4 / 4;
 }
 
-aside {
-  grid-area: 1 / auto / 4 / 5;
+.aside {
+  grid-area: 1 / 4 /  / 5;
+}
 
-  .footer {
-  }
+.footer {
+  grid-area: 1 / 5 / 5 / 5;
+}
   p {
     width: 500px;
     text-align: center;
