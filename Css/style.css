@@ -48,6 +48,7 @@ body {
   .navigationBar {
     background-color: #42a4ff;
     overflow: hidden;
+    position: fixed;
   }
   .navigationBar a {
     text-decoration: none;
