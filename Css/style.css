@@ -1,76 +1,74 @@
 body {
   margin: 0;
 }
-.pictures {   
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    
+.pictures {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 .underText {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: black;
-    color: white;
-    padding-left: 120px;
-    padding-right: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 120px;
+  padding-right: 20px;
 }
 .nav-container {
-    display: flex;
-    width: 100%;
-    margin: 0;
-    padding: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 1000px;
-  float: left;
-  margin: 0;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-rows: repeat(4, 200px);
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.container p {
+.main-header {
+  grid-area: 1 / 2 / 1 / 4;
+}
+
+.main-content {
+  grid-area: 2 / auto / 2 / 4;
 }
 
 aside {
-  display: flex;
-  width: 14%;
-  max-width: 1000px;
-  margin: 0;
-  padding: 20px;
-  float: right;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  grid-area: 1 / auto / 4 / 5;
 
+  .footer {
+    grid-area: /6 / 6 / auto;
+  }
+}
 p {
   width: 500px;
   text-align: center;
   line-height: 1.5;
 }
+
 h3 {
   width: 500px;
   text-align: center;
 }
+
 .navigationBar {
-    background-color: #42a4ff;
-    overflow: hidden;
-    
-  }
-.navigationBar a{
-    text-decoration: none;
-    float: left;
-    color: rgb(255, 255, 255);
-    display: block;
-    text-align: center;
+  background-color: #42a4ff;
+  overflow: hidden;
+}
+.navigationBar a {
+  text-decoration: none;
+  float: left;
+  color: rgb(255, 255, 255);
+  display: block;
+  text-align: center;
 }
 #subscribe {
-  float:left;
+  float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -78,7 +76,7 @@ h3 {
   font-size: 20px;
 }
 #contactUs {
-  float:left;
+  float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -87,19 +85,19 @@ h3 {
   font-size: 20px;
 }
 #store {
-    float:left;
-    display: block;
-    color: #42a4ff;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 20px;
-    background-color: white;
-}   
+  float: left;
+  display: block;
+  color: #42a4ff;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 20px;
+  background-color: white;
+}
 #about {
-    float:left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 20px;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 20px;
 }
