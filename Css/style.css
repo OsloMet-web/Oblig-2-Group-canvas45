@@ -1,46 +1,65 @@
 body {
   margin: 0;
 }
-.pictures img {
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit minmax(50px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  text-align: center;
+}
+
+.main-header {
+  grid-area: 1 / 1 / 2 / 5;
+  border: 3px solid green;
+}
+
+.pictures {
+  grid-area: 2 / 1 / 3 / 5;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   height: auto;
-}
-.container {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-auto-rows: minmax(150px, auto);
-  width: 100vw;
-  min-height: 100vh;
-  min-height: 100dvh;
-  align-items: start;
-}
-
-.main-header {
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-.main-content {
-  grid-area: 2 / 1 / 3 / 2;
+  border: 3px solid green;
 }
 
 #aside {
-  height: 100dvh;
-  display: sticky;
+  grid-area: 1 / 5 / 4 / 6;
+  border: 3px solid green;
+}
+
+.main-content {
+  grid-area: 3 / 1 / 3 / 5;
+  display: grid;
+  grid-template-columns: repeat(auto-fit minmax(50px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  align-items: center;
+  place-items: center;
+  border: 3px solid green;
+}
+
+.article {
+  grid-area: 1 / 2 / 4 / 4;
+  border: 3px solid green;
+}
+
+.info {
+  grid-area: 4 / 1 / 5 / 5;
   border: 3px solid green;
 }
 
 #footer {
-  grid-area: 3 / 1 / 4 / 3;
   background-color: #42a4ff;
   height: 100px;
   width: 100%;
 }
 
 p {
-  width: 500px;
+  width: 600px;
   text-align: center;
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
@@ -55,7 +74,7 @@ h3 {
   background-color: #42a4ff;
   overflow: hidden;
   width: 100%;
-  min-width: 1000px;
+  min-width: 100%;
 }
 .navigationBar a {
   text-decoration: none;
@@ -63,6 +82,7 @@ h3 {
   color: rgb(255, 255, 255);
   display: block;
   text-align: center;
+  place-items: center;
 }
 .navigationBar :hover {
   background-color: aqua;
@@ -81,7 +101,7 @@ h3 {
   color: #42a4ff;
   text-align: center;
   padding: 30px 40px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   background-color: rgb(255, 255, 255);
 }
 #contactUs {
