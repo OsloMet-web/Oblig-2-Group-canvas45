@@ -4,7 +4,6 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit minmax(50px, 1fr));
   grid-auto-rows: minmax(150px, auto);
   width: 100%;
   min-height: 100vh;
@@ -13,42 +12,54 @@ body {
 }
 
 .main-header {
-  grid-area: 1 / 1 / 2 / 5;
+  grid-area: 1 / 1 / 2 / 4;
+  text-align: left;
+  padding-left: 10px;
   border: 3px solid green;
 }
 
-.pictures {
-  grid-area: 2 / 1 / 3 / 5;
+header a {
+  color: orange;
+  text-decoration: none;
+}
+
+header p {
+  padding-left: 10px;
+}
+
+.main-picture {
+  grid-area: 2 / 1 / 3 / 4;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
   height: auto;
   border: 3px solid green;
 }
 
 #aside {
-  grid-area: 1 / 5 / 4 / 6;
+  grid-area: 1 / 4 / 4 / 4;
   border: 3px solid green;
 }
 
 .main-content {
-  grid-area: 3 / 1 / 3 / 5;
+  grid-area: 3 / 1 / 4 / 4;
   display: grid;
-  grid-template-columns: repeat(auto-fit minmax(50px, 1fr));
-  grid-auto-rows: minmax(100px, auto);
-  align-items: center;
-  place-items: center;
+  grid-auto-rows: minmax(50px, auto);
   border: 3px solid green;
 }
 
+.pictures {
+  grid-area: 1 / 1 / 2 / 2;
+  width: 100%;
+  height: auto;
+  border: 3px solid green;
+}
 .article {
-  grid-area: 1 / 2 / 4 / 4;
+  grid-area: 1 / 2 / 3 / 4;
   border: 3px solid green;
 }
 
 .info {
-  grid-area: 4 / 1 / 5 / 5;
+  grid-area: 3 / 1 / 4 / 4;
   border: 3px solid green;
 }
 
@@ -59,7 +70,7 @@ body {
 }
 
 p {
-  width: 600px;
+  width: 550px;
   text-align: center;
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
@@ -73,8 +84,6 @@ h3 {
 .navigationBar {
   background-color: #42a4ff;
   overflow: hidden;
-  width: 100%;
-  min-width: 100%;
 }
 .navigationBar a {
   text-decoration: none;
