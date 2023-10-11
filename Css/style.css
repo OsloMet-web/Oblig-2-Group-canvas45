@@ -3,17 +3,20 @@ body {
 }
 
 .container {
-  display: grid;
-  grid-auto-rows: minmax(150px, auto);
-  width: 100%;
+  display: grid; /* grid tutorial https://www.youtube.com/watch?v=EiNiSFIPIQE&t=11s Slaying The Dragon */
+  grid-template-columns: 1fr 250px; /* lager to kolonner hvor 250px er fixed størrelse, mens 1fr er det som er igjen*/
+  grid-auto-rows: minmax(
+    150px,
+    auto
+  ); /*rader som er adaptive til innholet i kolonnene*/
+  width: 100%; /*bruker 100% av størrelsen i gridden*/
   min-height: 100vh;
-  min-height: 100dvh;
   text-align: center;
 }
 
 .main-header {
-  grid-area: 1 / 1 / 2 / 4;
-  text-align: left;
+  grid-area: 1 / 1 / 2 / 2; /*Grid område*/
+  text-align: left; /*Headeren starter på venstre side*/
   padding-left: 10px;
   border: 3px solid green;
 }
@@ -28,7 +31,7 @@ header p {
 }
 
 .main-picture {
-  grid-area: 2 / 1 / 3 / 4;
+  grid-area: 2 / 1 / 3 / 2; /*Grid område*/
   display: block;
   width: 100%;
   height: auto;
@@ -36,30 +39,35 @@ header p {
 }
 
 #aside {
-  grid-area: 1 / 4 / 4 / 4;
+  grid-area: 1 / 2 / auto / 3; /*Grid område*/
+  position: sticky; /*Gjør at aside følger y-aksen når top er 0*/
+  top: 0;
   border: 3px solid green;
 }
 
 .main-content {
-  grid-area: 3 / 1 / 4 / 4;
+  grid-area: 3 / 1 / 4 / 2; /*Grid område*/
   display: grid;
+  grid-template-columns: 100px 1fr; /*Eget gridområde for main-content*/
   grid-auto-rows: minmax(50px, auto);
   border: 3px solid green;
 }
 
 .pictures {
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1 / 2 / 2; /*Grid område*/
+  min-width: 0px;
   width: 100%;
   height: auto;
   border: 3px solid green;
 }
 .article {
-  grid-area: 1 / 2 / 3 / 4;
+  grid-area: 1 / 2 / 3 / 4; /*Grid område*/
+  min-width: 50px;
   border: 3px solid green;
 }
 
 .info {
-  grid-area: 3 / 1 / 4 / 4;
+  grid-area: 3 / 1 / 4 / 4; /*Grid område*/
   border: 3px solid green;
 }
 
@@ -70,14 +78,14 @@ header p {
 }
 
 p {
-  width: 550px;
+  width: 100%;
   text-align: center;
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 h3 {
-  width: 500px;
+  width: 900px;
   text-align: center;
 }
 
@@ -145,6 +153,6 @@ h3 {
 .text-link {
   color: orange;
 }
-#boldline{
+#boldline {
   font-weight: bold;
 }
