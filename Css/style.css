@@ -25,9 +25,7 @@ header h1 {
 
 header h2 {
   font-size: 2rem;
-
 }
-
 header a {
   color: orange;
   text-decoration: none;
@@ -125,25 +123,10 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
-  text-align: center; 
-}
-
-h2 {
-  text-align: center;
-}
-
 h3 {
   width: 100%;
   text-align: center;
 }
-
-h4 {
-  text-align: center; 
-}
-
-div {text-align: center; }
-ul { display: inline-block; text-align: left; }
 
 .navigationBar {
   background-color: #42a4ff;
@@ -212,9 +195,4 @@ ul { display: inline-block; text-align: left; }
 }
 #boldline {
   font-weight: bold;
-}
- {
-  font: 800 40px Arial;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px;
 }
