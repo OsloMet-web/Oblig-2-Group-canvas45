@@ -51,7 +51,6 @@ header p {
   margin: 0rem 1rem 0rem 0rem;
   text-align: center;
   padding-left: 1em;
-  border-left: black dashed 1px;
 }
 
 .spons {
@@ -93,9 +92,7 @@ header p {
 
 .pictures {
   grid-area: 1 / 1 / 2 / 2; /*Grid område*/
-  display: flex;
   max-width: 100%;
-  border-right: black solid 2px;
 }
 
 .article {
@@ -114,13 +111,6 @@ header p {
   padding: 0.1rem 0.5rem 0.5rem 0.5rem;
   height: 100px;
   width: 100%;
-}
-
-.ePost {
-  max-width: 100%;
-  margin: 0rem 1rem 0rem 1rem;
-  column-count: 4;
-  column-gap: 1rem;
 }
 
 p {
