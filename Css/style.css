@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: azure;
-  overflow-x: hidden;
+  overflow-x: hidden; /*Gjør det umulig for leseren å "scrolle mot x-aksen (til sidene)*/
 }
 
 .main-header {
@@ -27,31 +27,24 @@ header p {
 }
 
 img {
-  width: 100%;
-  height: auto;
+  width: 100%; /*Utvidee bildet til hele skjermen dekkes*/ 
+  height: auto; /*Høyden justeres automatisk etter bildets vidde*/
 }
 .main-picture {
-  border-bottom: black dotted 2px;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
+  border-bottom: black dotted 2px; /*Gir den en svart "dotted border"*/
 }
 
 .main-content {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: minmax(100px, 1fr); /*Eget gridområde for main-content*/
-  grid-auto-rows: minmax(50px, auto);
+  display: grid;  /*Eget gridområde for main-content*/
+  grid-gap: 10px;
+  grid-template-columns: 100px 1fr; /*lager to kolonner hvor ene er 100px og 1fr bruker resten av plassen*/
+  grid-auto-rows: minmax(50px, auto); /*lager rader som kan i minstetilfellet være 50px*/
   margin: 0rem 1rem 0rem 1rem;
 }
 
 .pictures {
   grid-area: 1 / 1 / 2 / 2; /*Grid område*/
-  max-width: 100%;
+  max-width: 100%; /*bruker 100% av vidden i dens tildelte kolonne og rad*/
 }
 
 .article {
