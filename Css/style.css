@@ -11,10 +11,16 @@ body {
 
 header h1 {
   font-size: 3rem;
+  margin: 0;
 }
 
-header h2 {
+h2 {
   font-size: 2rem;
+}
+
+ h3 {
+  width: 100%;
+  text-align: center;
 }
 header a {
   color: orange;
@@ -70,11 +76,6 @@ p {
   text-align: center;
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-h3 {
-  width: 100%;
-  text-align: center;
 }
 
 .navigationBar {
